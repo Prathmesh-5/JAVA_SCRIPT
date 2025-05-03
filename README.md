@@ -1,6 +1,9 @@
 # JAVA_SCRIPT
 # n_o_t_e_s
+
 A repo for JavaScript code
+
+[Java Script documentation](https://tc39.es/ecma262/)
 
 - _JS_basic/name.js_
 ```js
@@ -41,5 +44,42 @@ console.table([accountId,accountEmail,accountFirstMobNum,accountSecondMobNum,acc
 │    3    │        '7626526361'         │
 │    4    │       'Uttar Pradesh'       │
 └─────────┴─────────────────────────────┘
+```
+
+- _JS_basic/datatypes.js_
+```js
+let name="Raj"; // string data_type
+let number=3232; // integer data_type
+let loggedIn=true; // boolean data_type
+let state; // undefined 
+let temperature=null; // empty hai
+
+// number => integer data_type of range 2^53
+// string => "xyz"
+// boolean => true / false
+// null => stand alone value (object data_type)
+// undefined => undefined data_type
+//symbol => unique
+
+console.log(state,temperature);
+
+// agar kisi ka data_type pata karna ho to :
+
+console.log(typeof(state)); // undefined
+console.log(typeof state); // undefined
+console.log(typeof undefined); // undefined
+console.log(typeof("Prathmesh")); // string
+console.log(typeof(temperature)); // object
+console.log(typeof(null)); // object
+
+▶️
+@Prathmesh-5 ➜ /workspaces/JAVA_SCRIPT (main) $ node JS_basic/datatypes.js 
+undefined null
+undefined
+undefined
+undefined
+string
+object
+object
 ```
 

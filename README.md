@@ -5,3 +5,4 @@ A repo for JavaScript code
 - JS_basic/name.js
 ```js
 console.log("Prathmesh Chauhan");
+![alt text](image.png)

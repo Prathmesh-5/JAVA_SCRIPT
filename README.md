@@ -6,4 +6,3 @@ A repo for JavaScript code
 ```js
 console.log("Prathmesh Chauhan");
 ```
-![alt text](image.png)

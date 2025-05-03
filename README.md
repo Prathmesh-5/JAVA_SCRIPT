@@ -1,2 +1,7 @@
 # JAVA_SCRIPT
-A repo for Java Script code 
+# n_o_t_e_s
+A repo for JavaScript code
+
+- JS_basic/name.js
+```js
+console.log("Prathmesh Chauhan");

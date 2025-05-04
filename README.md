@@ -8,8 +8,8 @@ A repo for JavaScript code
 - _JS_basic/name.js_
 ```js
 console.log("Prathmesh Chauhan");
-
-@Prathmesh-5 ➜ /workspaces/JAVA_SCRIPT (main) $ node JS_basic/name.js
+```
+```
 Prathmesh Chauhan
 ```
 
@@ -31,9 +31,8 @@ accountState="Uttar Pradesh"; //ye defaultly var datatype mein chala jata hai �
 console.log(accountId,accountEmail,accountFirstMobNum,accountSecondMobNum,accountState,2332,"adjag");
 
 console.table([accountId,accountEmail,accountFirstMobNum,accountSecondMobNum,accountState]);
-
-▶️
-@Prathmesh-5 ➜ /workspaces/JAVA_SCRIPT (main) $ node JS_basic/variables.js 
+```
+```
 910118 prathmesh321vns@gmail.com 8081400291 7626526361 Uttar Pradesh 2332 adjag
 ┌─────────┬─────────────────────────────┐
 │ (index) │           Values            │
@@ -71,9 +70,8 @@ console.log(typeof undefined); // undefined
 console.log(typeof("Prathmesh")); // string
 console.log(typeof(temperature)); // object
 console.log(typeof(null)); // object
-
-▶️
-@Prathmesh-5 ➜ /workspaces/JAVA_SCRIPT (main) $ node JS_basic/datatypes.js 
+```
+```
 undefined null
 undefined
 undefined

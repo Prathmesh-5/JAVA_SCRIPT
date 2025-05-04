@@ -9,11 +9,11 @@ A repo for JavaScript code
 ```js
 console.log("Prathmesh Chauhan");
 ```
-```
+```js
 Prathmesh Chauhan
 ```
 
-- _JS_basic/name.js_
+- _JS_basic/variables.js_
 ```js
 // ye constant ye fix hai change nahi ho sakta ✅
 const accountId=910118;
@@ -32,7 +32,7 @@ console.log(accountId,accountEmail,accountFirstMobNum,accountSecondMobNum,accoun
 
 console.table([accountId,accountEmail,accountFirstMobNum,accountSecondMobNum,accountState]);
 ```
-```
+```js
 910118 prathmesh321vns@gmail.com 8081400291 7626526361 Uttar Pradesh 2332 adjag
 ┌─────────┬─────────────────────────────┐
 │ (index) │           Values            │
@@ -71,7 +71,7 @@ console.log(typeof("Prathmesh")); // string
 console.log(typeof(temperature)); // object
 console.log(typeof(null)); // object
 ```
-```
+```js
 undefined null
 undefined
 undefined
@@ -80,4 +80,60 @@ string
 object
 object
 ```
+
+- _JS_basic/conversionOperation.js_
+```js
+let a1=23,a2="23",a3="",a4="raj",a5=true,a6=null,a7;   // a7 wala undefined hai
+```
+```js
+// Converting into a Number :
+console.table([Number(a1),Number(a2),Number(a3),Number(a4),Number(a5),Number(a6),Number(a7)]);
+
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│    0    │   23   │
+│    1    │   23   │
+│    2    │   0    │
+│    3    │  NaN   │
+│    4    │   1    │
+│    5    │   0    │
+│    6    │  NaN   │
+└─────────┴────────┘
+```
+```js
+// Converting into a string :
+console.table([String(a1),String(a2),String(a3),String(a4),String(a5),String(a6),String(a7)]);
+
+┌─────────┬─────────────┐
+│ (index) │   Values    │
+├─────────┼─────────────┤
+│    0    │    '23'     │
+│    1    │    '23'     │
+│    2    │     ''      │
+│    3    │    'raj'    │
+│    4    │   'true'    │
+│    5    │   'null'    │
+│    6    │ 'undefined' │
+└─────────┴─────────────┘
+```
+```js
+// Converting into a Boolean :
+console.table([Boolean(a1),Boolean(a2),Boolean(a3),Boolean(a4),Boolean(a5),Boolean(a6),Boolean(a7),Boolean(1)]);
+
+┌─────────┬────────┐
+│ (index) │ Values │
+├─────────┼────────┤
+│    0    │  true  │
+│    1    │  true  │
+│    2    │ false  │
+│    3    │  true  │
+│    4    │  true  │
+│    5    │ false  │
+│    6    │ false  │
+│    7    │  true  │
+└─────────┴────────┘
+```
+
+
 

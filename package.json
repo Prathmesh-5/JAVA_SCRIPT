@@ -4,10 +4,11 @@
   "description": "A repo for JavaScript code",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node JS_basic/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {},
   "keywords": [],
-  "author": "",
+  "author": "Prathmesh",
   "license": "ISC"
 }

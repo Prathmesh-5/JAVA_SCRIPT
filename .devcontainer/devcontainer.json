@@ -3,7 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
 
     // Automatically runs `npm install` after the container is created
-    "postCreateCommand": "npm install && npm start",
+    "postCreateCommand": "npm install && echo 'global.print = console.log;' >> /workspaces/JAVA_SCRIPT/utils.js",
 
     "customizations": {
         "vscode": {

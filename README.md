@@ -584,3 +584,12 @@ Wed May 01 2002 00:00:00 GMT+0000 (Coordinated Universal Time)
 1746532378
 5-1-2025
 ```
+## ARRAY in Java Script :
+- multiple data types ho sakte hai
+- dynamic size
+- object hai
+- JavaScript arrays are zero-indexed (means 0 se start hoga defaultly)
+- JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).
+- SHALLOW COPY : copy wale mein jo changes karoge wo original mein bhi ho jayega
+- DEEP CPOY : copy wale mein jo change karoge wo original wale mein nahi hoga 
+

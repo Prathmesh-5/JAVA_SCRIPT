@@ -405,7 +405,7 @@ raj  chauhan
 [ 'raj', 'chauhan  prathmesh prakhar' ]
 ```
 
-- _JS_basicnumsANDmaths.js_
+- _JS_basic/numsANDmaths.js_
 ```js
 // CONCEPT-1 :
 const score1=400;
@@ -495,3 +495,92 @@ number
 2
 ```
 
+- _JS_basic/dates.js_
+```js
+// give live date and time :
+
+let myDate= new Date();
+console.log(myDate); // 2025-05-06T11:04:30.594Z
+console.log(myDate.toString()); // Tue May 06 2025 11:04:30 GMT+0000 (Coordinated Universal Time)
+console.log(myDate.toDateString()); // Tue May 06 2025
+console.log(myDate.toJSON()); // 2025-05-06T11:04:30.594Z
+console.log(myDate.toISOString()); // 2025-05-06T11:04:30.594Z
+console.log(myDate.toLocaleString()); // 5/6/2025, 11:04:30 AM
+console.log(myDate.toLocaleDateString()); // 5/6/2025
+console.log(myDate.toTimeString()); // 11:04:30 GMT+0000 (Coordinated Universal Time)
+console.log(myDate.toUTCString()); // Tue, 06 May 2025 11:04:30 GMT
+
+/* Date(year,month,date,hour,minute,second,milli_seconds)
+
+* year = 2024, 2025 ,...
+* month = 0 - 11 ; jan=0 , feb=1 , ....
+* date = 1 - 31
+* hour = (24 hour format) ; 0 - 23
+* minute = 0 - 59
+* second = 0 - 59
+* milli_seconds = 0 - 999
+
+*/
+
+let createdDate= new Date(2025,0,5,14,55,34,400);
+console.log(createdDate);
+console.log(createdDate.toString());
+console.log(createdDate.toDateString());
+console.log(createdDate.toJSON());
+console.log(createdDate.toISOString());
+console.log(createdDate.toLocaleString());
+console.log(createdDate.toLocaleDateString());
+console.log(createdDate.toTimeString());
+console.log(createdDate.toUTCString());
+
+let x=new Date(2022,3,13);
+console.log(x);
+console.log(x.toString());
+
+
+let y=new Date("05-01-2002");
+console.log(y.toLocaleDateString("en-IN"));
+console.log(y.toString("en-IN"));
+
+// agar tumko millisecond mein chaiye time 
+
+let milliTime=Date.now();
+console.log(milliTime); // 1746531712599
+
+console.log(x.getTime()); // 1649808000000
+
+// agar second mein karna hai to :
+console.log(Math.floor(milliTime/1000)); // 1746531833
+
+
+// dd-mm-yyyy
+console.log(`${createdDate.getDate()}-${createdDate.getMonth()+1}-${createdDate.getFullYear()}`); // 5-1-2025
+```
+```js
+2025-05-06T11:52:58.058Z
+Tue May 06 2025 11:52:58 GMT+0000 (Coordinated Universal Time)
+Tue May 06 2025
+2025-05-06T11:52:58.058Z
+2025-05-06T11:52:58.058Z
+5/6/2025, 11:52:58 AM
+5/6/2025
+11:52:58 GMT+0000 (Coordinated Universal Time)
+Tue, 06 May 2025 11:52:58 GMT
+2025-01-05T14:55:34.400Z
+Sun Jan 05 2025 14:55:34 GMT+0000 (Coordinated Universal Time)
+Sun Jan 05 2025
+2025-01-05T14:55:34.400Z
+2025-01-05T14:55:34.400Z
+1/5/2025, 2:55:34 PM
+1/5/2025
+14:55:34 GMT+0000 (Coordinated Universal Time)
+Sun, 05 Jan 2025 14:55:34 GMT
+2022-04-13T00:00:00.000Z
+Wed Apr 13 2022 00:00:00 GMT+0000 (Coordinated Universal Time)
+1/5/2002
+Wed May 01 2002 00:00:00 GMT+0000 (Coordinated Universal Time)
+1746532378077
+1649808000000
+1746532378
+5-1-2025
+```
